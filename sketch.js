@@ -1,14 +1,21 @@
 function setup() {
   createCanvas(400, 400,WEBGL);
-   background(220)
+   background(209, 172, 223)
 }
 
 function draw() {
   
-  rotateY(frameCount * 0.01);
+  
+  
+  
+  noStroke()
+  
+  
 
-  rotateX(frameCount * 0.01);
-  rect(mouseX , mouseY, 55, 55)
-  fill(20, 30, 55, 55,20,30)
-  stroke(10)
+   rotateY(frameCount * 0.01);
+
+
+  fill(mouseX,mouseY,200,200)
+  stroke(50,30,20)
+   quad(-300, -300, 0, 100, -100, 0, 100, 100, 200, -100, 100, -200)
 }
